@@ -7,10 +7,14 @@
     "eslint-plugin-html": "^2.0.0"
   },
   "scripts": {
-    "start": "node ./node_modules/.bin/polymer serve -H 0.0.0.0",
+    "start": "node ./server.js",
+    "startp": "node ./node_modules/.bin/polymer serve -H 0.0.0.0",
     "lint": "npm run lint:javascript && polymer lint",
     "lint:javascript": "eslint . --ext js,html --ignore-path .gitignore",
     "test": "polymer test",
     "test:integration": "polymer build # test that psk builds without error with the CLI"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }

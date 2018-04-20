@@ -47,35 +47,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       }
     </style>
 
-    <!--<template is="dom-if" if="[[message]]">-->
-      <div class="login-form-wrapper">
-        <paper-card class="login-form">
-          <div class="card-content">
-            <p class="card-message">[[message]]</p>
-            <paper-input id="username" label="Username"></paper-input>
-            <paper-input id="password" label="Password" type="password"></paper-input>
-          </div>
-          <div class="card-actions">
-            <paper-button on-tap="login">Login</paper-button>
-          </div>
-        </paper-card>
-      </div>
-    <!--</template>-->
+    <div class="login-form-wrapper">
+      <paper-card class="login-form">
+        <div class="card-content">
+          <p class="card-message">[[message]]</p>
+          <paper-input id="username" label="Username"></paper-input>
+          <paper-input id="password" label="Password" type="password"></paper-input>
+        </div>
+        <div class="card-actions">
+          <paper-button on-tap="login">Login</paper-button>
+        </div>
+      </paper-card>
+    </div>
 
     <iron-ajax
-      auto
-      url="http://performance-challenge.herokuapp.com/api/status"
-      handle-as="json"
-      on-response="handleResponse"
+            auto
+            url="https://performance-challenge.herokuapp.com/api/status"
+            handle-as="json"
+            on-response="handleResponse"
     ></iron-ajax>
 
     <iron-ajax
-      id="login-ajax"
-      method="post"
-      content-type="application/json"
-      url="http://performance-challenge.herokuapp.com/api/login"
-      handle-as="json"
-      on-response="handleResponse"
+            id="login-ajax"
+            method="post"
+            content-type="application/json"
+            url="http://performance-challenge.herokuapp.com/api/login"
+            handle-as="json"
+            on-response="handleResponse"
     ></iron-ajax>
   </template>
 
@@ -85,7 +83,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     Polymer.setPassiveTouchGestures(true);
 
     class MyApp extends Polymer.Element {
-      static get is() { return 'my-app'; }
+      static get is() {
+        return 'my-app';
+      }
 
       static get properties() {
         return {

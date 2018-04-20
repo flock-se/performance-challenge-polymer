@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["bower_components/webcomponentsjs/webcomponents-loader.js","f7eb9862b1725aef7e59f8584c2a2efb"],["index.html","97a4aea919ce876b1c1c547a5b88d8b5"],["manifest.json","1845171d3c4fe9ebe6a48852f4347b34"],["src/my-app.html","b2b130e785747394dc0e5803cec3c2d7"]];
+var precacheConfig = [["bower_components/webcomponentsjs/webcomponents-loader.js","f7eb9862b1725aef7e59f8584c2a2efb"],["index.html","97a4aea919ce876b1c1c547a5b88d8b5"],["manifest.json","1845171d3c4fe9ebe6a48852f4347b34"],["src/my-app.html","62d27cd026652e7edf91e0abe484a8ec"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
